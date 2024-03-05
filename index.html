@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download JPEG Image</title>
+</head>
+<body>
+    <h1>Download JPEG Image</h1>
+    <p>Click the button below to download the JPEG image.</p>
+    
+    <!-- Provide the link to the JPEG image with the download attribute -->
+    <a href="#" id="downloadLink" download="information_technology_banner.jpg">
+        <button onclick="downloadImage()">Download Image</button>
+    </a>
+
+    <script>
+        function downloadImage() {
+            // Direct URL of the image
+            var imageUrl = "https://academics.siu.edu/computing-and-technology/_common/images/itec/itec-index-banner.jpg";
+            
+            // Set href attribute of anchor tag to the image URL
+            document.getElementById("downloadLink").href = imageUrl;
+        }
+    </script>
+</body>
+</html>
